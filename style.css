@@ -43,10 +43,20 @@ img {
   height: auto;
 }
 
+
 footer {
   background: #2f303a;
   color: #fff;
 }
+
+
+
+
+
+
+
+
+
 
 .container {
   width: 100%;
@@ -135,6 +145,7 @@ header .container {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: #212121;
+  
 }
 .page-header__link:hover, .page-header__link:focus {
   color: #2196f3;
@@ -959,7 +970,7 @@ header .container {
   border-top-style: none;
 }
 
-/* Синій оверлей з текстом на картках сторінки Портфоліо */
+
 .grid__box {
   position: relative;
   overflow: hidden;
@@ -1405,73 +1416,10 @@ header .container {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* stylization checkbox */
-.checkbox__input {
-  position: absolute;
-  z-index: -1;
-  opacity: 0;
-}
 
-.checkbox__input + span {
-  display: inline-flex;
-  align-items: center;
-  padding-left: 14px;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
-}
 
-.checkbox__input + span::before {
-  content: "";
-  display: inline-block;
-  width: 16px;
-  height: 15px;
-  flex-shrink: 0;
-  flex-grow: 0;
-  border: 2px solid #212121;
-  border-radius: 2px;
-  margin-right: 8px;
-  cursor: pointer;
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: 50% 50%;
-}
 
-.checkbox__input:hover + span::before,
-.checkbox__input:focus + span::before {
-  border-color: #2196f3;
-  transition: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.checkbox__input:checked + span::before {
-  background-size: contain;
-  background-origin: border-box;
-  border-color: transparent;
-  background-image: url(../images/icon_check.svg);
-}
 
-.checkbox__text {
-  height: 24px;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-  color: #757575;
-}
 
-@media screen and (max-width: 768px) {
-  .checkbox__text {
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 1.16;
-    letter-spacing: 0.03em;
-  }
-}
-.checkbox__link {
-  margin-left: 4px;
-  -webkit-text-decoration-line: underline;
-          text-decoration-line: underline;
-  color: #2196f3;
-}
+
